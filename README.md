@@ -13,16 +13,7 @@ The project is structured as follows:
 - **Curve1D and LinearInterpolation:** Defines a base class and a derived class for handling 1D interpolation of curves, essential for modeling interest rates and volatilities in financial instruments.
 - **Model and LogNormalProcess:** Abstract and concrete classes for stochastic processes, with LogNormalProcess demonstrating a multi-dimensional model for asset prices influenced by dynamic rates and volatilities.
 - **Trade and AsianOption:** Abstract and concrete classes where `Trade` defines a base for trading instruments and `AsianOption` implements an option dependent on the average price of an underlying asset.
-- **main.cpp:** Drives the simulation, demonstrating the use of the aforementioned classes in a Monte Carlo simulation to estimate prices of Asian options in a synthetic market environment.
-
-## High-Level Code Description
-- **Curve1D:** An abstract base class that defines a virtual function for curve interpolation.
-- **LinearInterpolation:** Implements the `Curve1D` interface, providing linear interpolation between given data points.
-- **Model:** An abstract base class that outlines methods for evolving the state of financial models.
-- **LogNormalProcess:** A multi-dimensional stochastic model implementing the `Model` interface. It simulates asset price evolution based on log-normal dynamics, with each dimension having its own interest rate and volatility curves.
-- **Trade:** An abstract base class defining the essential functionalities of a financial trade instrument.
-- **AsianOption:** Extends `Trade`, specifically to handle the calculations for options that depend on the average price of an asset over a specified time frame.
-- **main.cpp:** Contains the main function which sets up and runs a Monte Carlo simulation to estimate option prices, showcasing the entire system's functionality.
+- **main:** Drives the simulation, demonstrating the use of the aforementioned classes in a Monte Carlo simulation to estimate prices of Asian options in a synthetic market environment.
 
 ## Building and Running the Project
 To compile and run the project, ensure you have a C++ compiler that supports C++11 or later and CMake for building. Follow these steps:
