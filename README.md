@@ -28,14 +28,18 @@ The project is structured as follows:
 To compile and run the project, ensure you have a C++ compiler that supports C++11 or later and CMake for building. Follow these steps:
 
 1. ** Getting the code and building steps:**
+```
     git clone https://github.com/matlogica/Enzyme-example.git
     cd Enzyme-example
     mkdir build && cd build
     cmake ..
     make
+```
 
 2. ** Run the base code(no AAD):**
+```
     ./base-code
+```
 
 ## TODO:
 
