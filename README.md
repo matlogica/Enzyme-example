@@ -50,4 +50,11 @@ This project is currently at a foundational stage, with many potential enhanceme
 - **Community Engagement and Feedback:**
   - We actively encourage feedback from quantitative analysts and other users on the types of features and functionalities they would like to see in automatic differentiation tools. This engagement will help tailor the development to meet real-world needs and make the tools more effective for specific quantitative finance applications. We invite the community to share their experiences, suggest improvements, and discuss potential features that could enhance their workflow and analysis capabilities.
 
+## Enzyme Integration Plan
+The integration of Enzyme into our project aims to facilitate automatic adjoint differentiation (AAD) with minimal impact on the existing C++ code base, ensuring that derivative computation can be seamlessly incorporated without extensive modifications. The plan is structured as follows:
 
+**Assessment of C++ Feature Support**: Initially, we will conduct a thorough analysis to understand which C++ features are supported by Enzyme. This includes assessing compatibility with various object-oriented constructs, template usage, and exception handling mechanisms. Our goal is to determine how well Enzyme can integrate with our existing code structure and workflows. See Enzyme-experiments/
+
+**Minimal Code Changes**: To qualify as an effective AAD tool, Enzyme must integrate with our existing base-code.cpp with minimal changes. This involves identifying the strategic points within the code where Enzyme's automatic differentiation functionalities can be inserted without altering the fundamental logic or architecture of the application. The focus will be on enhancing functions with derivative capabilities using Enzyme's APIs while keeping the original syntax and structure intact as much as possible.
+
+By following this plan, we aim to leverage Enzyme’s capabilities to enhance our project's efficiency in computing derivatives, essential for accurate and fast quantitative analysis, without compromising the simplicity and readability of our base code. This integration not only tests Enzyme's adaptability with complex C++ features but also sets a benchmark for its application in sophisticated financial modeling.
