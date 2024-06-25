@@ -25,18 +25,18 @@ To ensure consistency across different environments, a Docker container is used.
 
 After building the image, start your container with:
 
-    ```docker run -it enzyme-oop-test /bin/bash```
+    ```docker run -it enzyme-oop-test /bin/bash
 
 3. **Compiling the Code**
 
 The compile.sh script contains all necessary commands to build the program. Execute this script in the Docker container:
 
-```./compile.sh```
+    ```./compile.sh
 
 4. **Running the Tests**
 Execute the compiled program within the Docker container:
 
-```./a.out```
+    ```./a.out
 
 5. **Expected Output**
 Upon running the program, the expected output should be:
@@ -49,7 +49,8 @@ square(4.000000)=64.000000, dsquare(4.000000)=48.000000, check(4.000000)=48.0000
 ```
 
 6. **Actual Output**
-```Segmentation fault (core dumped)```
+
+    ```Segmentation fault (core dumped)
 
 7. **Files**
 
